@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    /* For all body flex display along column*/
+    align-items: center;
+}
+
+.header__left img{
+    height: 40px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.header{
+    width: 100%;
+    position: sticky;
+    display: flex;
+    /* Makes Header_Left and Header_Right to Flex along row */
+    top:0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid grey;
+    padding: 10px;
+    /* Padding to the top and bottom of Header container */
+    background-color: white;
+}
+
+.header__left{
+display: flex;
+/* aligns logo, icon, input along flex row direction */
+}
+
+.header__right{
+display: flex;
+/* aligns set of icons and heads along flex row direction */
+}
+
+.header__search{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: grey;
+    background-color: #eef3f8;
+}
+
+.header__search input{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.headeroption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.headeroption:hover{
+    color: black;
+}
+
+.headeroption h3{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* main body */
+.main__body{
+    display: flex;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background-color: red; */
+}
+
+
+/* Sidebar */
+
+.sidebar{
+   position: sticky;
+   top: 80px;
+   flex:0.2;
+   border-radius: 10px;
+   text-align: center;
+   height: fit-content; 
+}
+
+.sidebar__top img{
+    margin-bottom: -20px;
+    width: 100%;
+    /* height: 60px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* object-fit: cover; */
+}
+
+.sidebar__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.sidebar__topAvatar{
+    font-size: 10px;
+}
+
+.sidebar__topAvatar h4{
+    color: grey;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.sidebar__topAvatar h2{
+    font-size: 18px;
+}
+
+.sidebar__stats{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar__stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__stat p{
+    color: grey;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.sidebar__statNum{
+    font-weight: bold;
+    color: blue !important;
+}
+
+.sidebar__stat:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.sidebar__bottom{
+text-align: left;
+padding: 10px;
+border: 1px solid lightgrey;
+background-color: white;
+border-radius: 10px;
+margin-top: 10px;
+
+}
+
+.sidebar__recentItems{
+    margin-bottom: 5px;
+    display: flex;
+    padding: 5px;
+    text-align: left;
+    color: grey; 
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;  
+}
+
+.sidebar__hash{
+    margin: 0 10px;
+    color: gray;
+    font-size: larger !important;
+    font-weight: bolder !important;
+}
+
+
+.sidebar__recentItems:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Feed */
+
+.feed{
+    flex: 0.6;
+    margin: 0 20px;    
+}
+
+.feed__InputContainer{
+    background-color: white;
+    /* background-color: cyan; */
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feed__topAvatar{
+    width: 30px;
+    margin-top: 5px;
+    
+}
+
+.avatar__input{
+    display: flex;
+}
+
+.feed__input{
+    flex:1;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px;
+    border-radius: 30px;
+    
+}    
+
+.feed__input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0 0px;
+    background-color: transparent;
+}
+
+.feed__inputFooter{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    /* align items along the axis, here flex direction is row */
+
+}
+
+.feed__inputFooter h3{
+    color: grey;
+    font-size: 12px;
+    margin-left: 10px;
+    
+}
+
+.feed__inputFooter:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.feed_inputOptions{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+/* Post */
+
+.post{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.post__header{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post__headerTitle{
+    margin-left: 10px;
+}
+
+.post__headerTitle h2{
+font-size: 15px;
+}
+
+.post__headerTitle p{
+    font-size: 12px;
+    color: grey;
+}
+
+.post__body{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.post__footer{
+    border-top: 1px solid lightgrey;
+    display:flex;
+    justify-content: space-between;
+    /* padding:15px 10px; */
+    color: grey;
+    font-size: 12px;
+}
+
+.footerIcon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    /* color: grey;
+    font-size: 12px; */
+}
+
+.footerIcon:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}   
+
+.widgets img{
+    border-radius: 10px;
+
+}
