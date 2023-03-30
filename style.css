@@ -332,5 +332,6 @@ font-size: 15px;
 
 .widgets img{
     border-radius: 10px;
-
+    position:fixed;
+    top:0;
 }
